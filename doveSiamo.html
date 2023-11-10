@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dove Siamo</title>
+  </head>
+  <body>
+    <!--menù orizzontale-->
+    <nav class="navbar">
+      <div class="max">
+        <div class="home"><a href="index.php"> Ristorante Oasi</a></div>
+        <ul class="menu">
+          <li>
+            <a href="prenota.html"> Prenota<br /> </a>
+          </li>
+
+          <li>
+            <a href="doveSiamo.html"> Dove siamo <br /> </a>
+          </li>
+        </ul>
+        <button
+          id="pulsante2"
+          class="fas fa-bars"
+          onclick="pulsante()"
+        ></button>
+      </div>
+    </nav>
+
+  <div id="immSfondo2">
+      <div id="pulsante1"></div>
+
+    <div class="titlePrenotazione">DOVE SIAMO</div>
+    <div id="descrizionePosizione">
+      Ci trovate su Strada Vallesanta, 6, a Campotto in provincia di Ferrara.
+      <br />
+      Orari e giorni di apertura: <br />
+      <ul id="orari">
+        <li>
+          <a> Lunedi - Chiuso <br /> </a>
+        </li>
+
+        <li>
+          <a> Martedì - Chiuso <br /> </a>
+        </li>
+
+        <li>
+          <a> Mercoledì - Aperto dalle 12 alle 14 <br /> </a>
+        </li>
+
+        <li>
+          <a> Giovedì - Aperto dalle 12 alle 14 <br /> </a>
+        </li>
+
+        <li>
+          <a> Venerdì - Aperto dalle 12 alle 14 e dalle 19:30 alle 22<br /> </a>
+        </li>
+
+        <li>
+          <a> Sabato - Aperto dalle 09:30 alle 22 <br /> </a>
+        </li>
+
+        <li>
+          <a> Domenica - Aperto dalle 09:30 alle 22 <br /> </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div id="DivMappa" style="width: 600px; height: 400px;"></div> -->
+    <div id="mappa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.14187715502!2d11.814056375708807!3d44.57366559241486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e17ad4a673f57%3A0x51089f0becd3e380!2sBar%20Ristorante%20Oasi!5e0!3m2!1sit!2sit!4v1699374505564!5m2!1sit!2sit" id="mappa1"></iframe>
+    </div>
+    <!-- <script src="index.js">
+      createMap("DivMappa", 11.8166431, 44.5738516);
+    </script> -->
+
+  </div>
+
+    
+    <footer id="footer">
+      Autore: Boggian Daniele <br />
+      Classe: 5G <br />
+      Copyright by Boggian Daniele <br />
+    </footer>
+
+  </body>
+  <!-- <script src="http://www.openlayers.org/api/OpenLayers.js"></script> -->
+  <script src="index.js"></script>
+</html>

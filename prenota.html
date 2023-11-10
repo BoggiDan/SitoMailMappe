@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Prenotazione</title>
+  </head>
+
+  <body>
+    <!--menù orizzontale-->
+    <nav class="navbar">
+        <div class="max">
+          <div class="home"><a href="index.php"> Ristorante Oasi</a></div>
+          <ul class="menu">
+            <li>
+              <a href="prenota.html"> Prenota<br /> </a>
+            </li>
+  
+            <li>
+              <a href="doveSiamo.html"> Dove siamo <br /> </a>
+            </li>
+
+          </ul>
+          <button id="pulsante2" class="fas fa-bars" onclick="pulsante()"></button>
+        </div>
+      </nav>
+
+    <div id="immSfondo">
+      <div class="titlePrenotazione">PRENOTAZIONE <br /></div>
+      
+    <form action="prenota.php" method="POST">
+      <fieldset>
+        <legend>Modulo da compilare</legend>
+        <p>
+          <label> Nome: </label>
+          <input type="text" id="fname" name="fname" placeholder="Nome" required/>
+
+          <label> Cognome: </label>
+          <input type="text" id="lname" name="lname" placeholder="Cognome"required/>
+          <br />
+        </p>
+
+        <p>
+          <label> Sesso: </label> <br />
+          <input type="radio" name="sesso" value="Maschio" required /> Maschio
+          <br />
+          <input type="radio" name="sesso" value="Femmina" required /> Femmina
+          <br>
+          <input type="radio" name="sesso" value="Altro" required /> Altro
+          <br>
+        </p>
+
+        <p>
+          <label> Data di prenotazione: </label>
+          <input type="date" id="date" name="date" required>
+        </p>
+
+        <p>
+          <label> Orario di prenotazione: </label>
+          <input type="time" id="time" name="time" required>
+        </p>
+
+        <p>
+            <label> Numero di persone al tavolo: </label>
+            <input type="number" id="nPersone" name="nPersone" min="1" max="20" required/>
+        </p>
+
+        <p>
+          <label> Email: </label>
+          <input type="email" id="email" name="email" placeholder="es. nome@email.com" required/>
+        </p>
+
+        <p>
+          <label> Numero di telefono: </label>
+          <input type="text" id="telefono" name="telefono" placeholder="Cellulare" required/>
+        </p>
+
+        <p>
+          <label> Regione di provenienza: </label>
+          <select>
+            <option></option>
+
+            <option>Abruzzo</option>
+
+            <option>Basilicata</option>
+
+            <option>Calabria</option>
+
+            <option>Campania</option>
+
+            <option>Emilia Romagna</option>
+
+            <option>Friuli Venezia Giulia</option>
+
+            <option>Lazio</option>
+
+            <option>Liguria</option>
+
+            <option>Lombardia</option>
+
+            <option>Marche</option>
+
+            <option>Molise</option>
+
+            <option>Piemonte</option>
+
+            <option>Puglia</option>
+
+            <option>Sardegna</option>
+
+            <option>Sicilia</option>
+
+            <option>Toscana</option>
+
+            <option>Trentino Alto Adige</option>
+
+            <option>Umbria</option>
+
+            <option>Val d'Aosta</option>
+
+            <option>Veneto</option>
+          </select>
+          <br />
+        </p>
+
+        <p id="invii">
+          <label>
+            <input type="reset" name="Rifai" value="Rifai" id="bottoneInvio"/>
+          </label>
+  
+          <label>
+            <input type="submit" name="Invia" value="Invia" id="bottoneInvio" formaction="prenota.php"/>
+          </label>
+        </p>
+      </fieldset>
+    </form>
+    </div>
+
+    <footer id = "footer">
+      Autore: Boggian Daniele <br />
+      Classe: 5G <br />
+      Copyright by Boggian Daniele <br />
+    </footer>
+  </body>
+</html>
