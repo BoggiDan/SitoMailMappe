@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  /*overflow-x: hidden; */
 }
 
 body {
@@ -332,6 +334,7 @@ p {
 }
 
 #mappa {
+  width: 100%;
   display: grid;
   place-items: center;
 }
@@ -373,7 +376,15 @@ footer {
 @media (max-width: 500px) {
   .navbar {
     /* background-color: transparent; */
-    height: 60px;
+    height: 90px;
+  }
+
+  .navbar .max{
+    margin-top: 5%;
+  }
+  
+  .navbar .max a{
+    font-size: 24px;
   }
 
   .navbar ul {
@@ -395,6 +406,28 @@ footer {
 
   .descrizione {
     padding-top: 0;
+  }
+
+  #descrizionePosizione{
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  #mappa{
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    margin: 0% 2%;
+  }
+
+  #mappa1{
+      margin: 10px;
+      width: 150px;
+      height: 150px;
+  }
+
+  fieldset{
+    margin: 1% 3% 0% 3%;
   }
   /* FOOTER */
 

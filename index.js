@@ -2,7 +2,7 @@ function pulsante() {
     document.getElementById("pulsante1").innerHTML="";
     document.getElementById("pulsante1").style.right="0px";
     document.getElementById("pulsante1").style.background="linear-gradient(#fefae0, #dda15e)";
-    document.getElementById("pulsante1").innerHTML += `<div class="homeMenuVerticale"> MONTE CARLO <br> <br /></div> <div class="opzioni"> Proposte</div><div class="opzioni"> Dove siamo</div><div class="opzioni"> Contatti</div><div class="opzioni"> Carrello</div>`;
+    document.getElementById("pulsante1").innerHTML += `<div class="homeMenuVerticale"> Ristorante Oasi <br> <br /></div> <div class="opzioni"> <a href="prenota.html"> Prenota<br /> </a> </div><div class="opzioni"> <a href="doveSiamo.html"> Dove siamo <br /> </a></div>`;
     document.getElementById("pulsante1").innerHTML += `<button id="pulsanteChiudi" class="fas fa-times" onclick="chiudi()"></button>`;
     document.getElementById("pulsante1").style.color = "black";
 }

@@ -8,6 +8,9 @@
   <!--CSS-->
   <link rel="stylesheet" href="style.css">
 
+    <!-- Per le icone (menu hamburger e X nel responsive)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   <title>Mail e Mappe</title>
 </head>
 
@@ -73,6 +76,7 @@
           <button id="pulsante2" class="fas fa-bars" onclick="pulsante()"></button>
         </div>
       </nav>
+      <div id="pulsante1"></div>
   
       HTML;
   echo $navbar;
