@@ -382,13 +382,17 @@ footer {
   .navbar .max{
     margin-top: 5%;
   }
-  
+
   .navbar .max a{
     font-size: 24px;
   }
 
   .navbar ul {
     display: none;
+  }
+
+  .opzioni a{
+    color: black;
   }
 
   /*PULSANTE*/
@@ -410,6 +414,7 @@ footer {
 
   #descrizionePosizione{
     font-size: 16px;
+    text-align: inherit;
     overflow-x: hidden;
   }
 
